@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculating Numbers</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    
+    {% for error in errors %}
+    <p>{{ error }}</p>
+    {% endfor %}
+    <p>Enter your numbers: </p>
+    <form method="post" action=".">
+      <p><input name="number1" /></p>
+      <p><input name="number2" /></p>
+      <p><input type="radio" name="calc" value="addition">ADD</input>
+      <input type="radio" name="calc" value="subtraction">SUBTRACT</input>
+      <input type="radio" name="calc" value="multiplication">MULTIPLY</input>
+      <input type="radio" name="calc" value="division">DIVIDE</input></p>
+
+      <p><input type="submit" class="button" value="Do calculation" /></p>
+      </form>
+  </body>
+</html>
